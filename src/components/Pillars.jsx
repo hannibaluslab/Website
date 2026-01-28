@@ -1,21 +1,20 @@
-
 const pillars = [
   {
-    number: '1',
-    title: 'Identity',
-    description: 'ENS-powered identity built in, not bolted on',
+    number: "1",
+    title: "Smart Auth",
+    description: "Biometric login meets account abstraction.",
   },
   {
-    number: '2',
-    title: 'Auth & AA',
-    description: 'Passkey auth and smart accounts, integrated',
+    number: "2",
+    title: "Identity",
+    description: "ENS-powered identity built in, not bolted on.",
   },
   {
-    number: '3',
-    title: 'Neutral',
-    description: 'Deploy anywhere, no ecosystem allegiances',
+    number: "3",
+    title: "Neutral Stack",
+    description: "We don't pick chains. The choice is all yours.",
   },
-]
+];
 
 export default function Pillars() {
   return (
@@ -24,10 +23,11 @@ export default function Pillars() {
         {/* Header - Left aligned */}
         <div className="mb-8 md:mb-10">
           <h2 className="text-2xl md:text-3xl lg:text-[36px] font-bold mb-2 font-['Space_Grotesk',sans-serif] leading-tight">
-            Three Pillars, One Infrastructure
+            Three Birds, One Stone
           </h2>
           <p className="text-[#737373] text-sm md:text-base">
-            Most teams patch together separate solutions for auth, accounts, and identity. JAW.ID unifies all three. One SDK, every chain, no dependencies.
+            Most teams patch together separate solutions for auth, accounts, and
+            identity. JAW.ID unifies all three. One SDK fits all.
           </p>
         </div>
 
@@ -37,7 +37,7 @@ export default function Pillars() {
             <div
               key={index}
               className="border border-[#e5e5e5] rounded-xl shadow-sm"
-              style={{ backgroundColor: '#ffffff' }}
+              style={{ backgroundColor: "#ffffff" }}
             >
               <div className="px-6 py-6 h-full flex flex-col">
                 {/* Title - centered */}
@@ -56,5 +56,5 @@ export default function Pillars() {
         </div>
       </div>
     </section>
-  )
+  );
 }

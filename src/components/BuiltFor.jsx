@@ -1,77 +1,91 @@
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { CreditCard, Building2, Bot, CalendarCheck, Blocks } from "lucide-react"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import {
+  CreditCard,
+  Building2,
+  Bot,
+  CalendarCheck,
+  Blocks,
+} from "lucide-react";
 
 const tabs = [
   {
-    id: 'neobanks',
-    label: 'Neobanks',
+    id: "neobanks",
+    label: "Neobanks",
     icon: CreditCard,
-    title: 'Neobanks',
-    description: 'Give customers self-custody wallets inside your app. Enable stablecoin payments, instant remittances, and onchain yield under your brand.',
+    title: "Neobanks",
+    description:
+      "Give customers self-custody wallets inside your app. Enable stablecoin payments, instant remittances, and onchain yield under your brand.",
     useCases: [
-      'SWIFT-free remittances',
-      'FX-free stablecoin payments',
-      'Branded crypto exposure',
-      'DeFi-backed savings',
+      "SWIFT-free remittances",
+      "FX-free stablecoin payments",
+      "Branded crypto exposure",
+      "DeFi-backed savings",
     ],
   },
   {
-    id: 'enterprise',
-    label: 'Enterprise',
+    id: "tradfi enterprise",
+    label: "TradFi Enterprise",
     icon: Building2,
-    title: 'Enterprise',
-    description: 'Enable programmable payments with 24/7 settlement and direct DeFi access. Move money without stack overhauls, correspondent banks, or delays.',
+    title: "TradFi Enterprise",
+    description:
+      "Enable programmable payments with 24/7 settlement and direct DeFi access. Move money without stack overhauls, correspondent banks, or delays.",
     useCases: [
-      'Instant cross-border settlement',
-      'Tokenized assets on global rails',
-      'Institutional DeFi access',
-      'Yield without custodians',
+      "Instant cross-border settlement",
+      "Tokenized assets on global rails",
+      "Institutional DeFi access",
+      "Yield without custodians",
     ],
   },
   {
-    id: 'ai-agents',
-    label: 'AI Agents',
+    id: "ai-agents",
+    label: "AI Agents",
     icon: Bot,
-    title: 'AI Agent Platforms',
-    description: 'Let agents act on users\' behalf within hard limits. Define accessible assets, spending caps, and permission expiration for controlled automation.',
+    title: "AI Agent Platforms",
+    description:
+      "Let agents act on users' behalf within hard limits. Define accessible assets, spending caps, and permission expiration for controlled automation.",
     useCases: [
-      'Automated DCA',
-      'Trading copilots',
-      'Portfolio managers',
-      'DeFi strategists',
+      "Automated DCA",
+      "Trading copilots",
+      "Portfolio managers",
+      "DeFi strategists",
     ],
   },
   {
-    id: 'subscriptions',
-    label: 'Subscriptions',
+    id: "subscriptions",
+    label: "Subscriptions",
     icon: CalendarCheck,
-    title: 'Subscription Services',
-    description: 'Enable users to approve once while you charge on schedule. Set spending limits, define billing cycles, and collect payments without repeated wallet prompts.',
+    title: "Subscription Services",
+    description:
+      "Enable users to approve once while you charge on schedule. Set spending limits, define billing cycles, and collect payments without repeated wallet prompts.",
     useCases: [
-      'SaaS billing',
-      'Content subscriptions',
-      'Gaming passes',
-      'DeFi vaults',
+      "SaaS billing",
+      "Content subscriptions",
+      "Gaming passes",
+      "DeFi vaults",
     ],
   },
   {
-    id: 'dapps',
-    label: 'dApps',
+    id: "dapps",
+    label: "dApps",
     icon: Blocks,
-    title: 'dApps',
-    description: 'Ship smart accounts without changing your stack. Standard Wagmi hooks and provider interface with enhanced wallet functionality.',
+    title: "dApps",
+    description:
+      "Ship smart accounts without changing your stack. Standard Wagmi hooks and provider interface with enhanced wallet functionality.",
     useCases: [
-      'DeFi protocols',
-      'Onchain games',
-      'Social apps',
-      'Creator platforms',
+      "DeFi protocols",
+      "Onchain games",
+      "Social apps",
+      "Creator platforms",
     ],
   },
-]
+];
 
 export default function BuiltFor() {
   return (
-    <section className="py-16 md:py-28 px-4 md:px-6" style={{ background: '#0a0a0a' }}>
+    <section
+      className="py-16 md:py-28 px-4 md:px-6"
+      style={{ background: "#0a0a0a" }}
+    >
       <div className="max-w-[900px] mx-auto">
         {/* Header */}
         <div className="text-center mb-10">
@@ -79,7 +93,8 @@ export default function BuiltFor() {
             Built For
           </h2>
           <p className="text-gray-400 text-base">
-            From consumer apps to enterprise solutions, JAW adapts to your needs.
+            From consumer apps to enterprise solutions, JAW adapts to your
+            needs.
           </p>
         </div>
 
@@ -87,7 +102,7 @@ export default function BuiltFor() {
         <Tabs defaultValue="neobanks" className="w-full">
           <TabsList className="w-full h-auto bg-white/[0.05] rounded-lg p-1 border border-white/10 mb-4 flex flex-wrap md:flex-nowrap gap-1">
             {tabs.map((tab) => {
-              const Icon = tab.icon
+              const Icon = tab.icon;
               return (
                 <TabsTrigger
                   key={tab.id}
@@ -97,12 +112,12 @@ export default function BuiltFor() {
                   <Icon className="w-4 h-4 mr-1 md:mr-2 hidden sm:block" />
                   {tab.label}
                 </TabsTrigger>
-              )
+              );
             })}
           </TabsList>
 
           {tabs.map((tab) => {
-            const Icon = tab.icon
+            const Icon = tab.icon;
             return (
               <TabsContent key={tab.id} value={tab.id} className="mt-0">
                 <div className="bg-white/[0.03] border border-white/10 rounded-xl p-5 md:p-8">
@@ -120,10 +135,15 @@ export default function BuiltFor() {
                   </p>
 
                   <div>
-                    <p className="font-semibold text-sm mb-3 md:mb-4 text-white">Example Use Cases:</p>
+                    <p className="font-semibold text-sm mb-3 md:mb-4 text-white">
+                      Example Use Cases:
+                    </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-2 md:gap-y-3">
                       {tab.useCases.map((useCase, index) => (
-                        <div key={index} className="flex items-start gap-3 text-gray-400 text-sm">
+                        <div
+                          key={index}
+                          className="flex items-start gap-3 text-gray-400 text-sm"
+                        >
                           <span className="w-2 h-2 bg-white rounded-full flex-shrink-0 mt-1.5" />
                           {useCase}
                         </div>
@@ -132,10 +152,10 @@ export default function BuiltFor() {
                   </div>
                 </div>
               </TabsContent>
-            )
+            );
           })}
         </Tabs>
       </div>
     </section>
-  )
+  );
 }

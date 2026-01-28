@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button"
-import { ArrowRight, Copy } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Copy } from "lucide-react";
 
 export default function CodeShowcase() {
   return (
@@ -8,15 +8,17 @@ export default function CodeShowcase() {
       <div
         className="absolute inset-0"
         style={{
-          background: 'linear-gradient(135deg, #f8f9ff 0%, #ffffff 40%, #f0f4ff 100%)'
+          background:
+            "linear-gradient(135deg, #f8f9ff 0%, #ffffff 40%, #f0f4ff 100%)",
         }}
       />
       {/* Dot pattern overlay */}
       <div
         className="absolute inset-0 opacity-40"
         style={{
-          backgroundImage: 'radial-gradient(circle, #a5b4fc 1px, transparent 1px)',
-          backgroundSize: '20px 20px'
+          backgroundImage:
+            "radial-gradient(circle, #a5b4fc 1px, transparent 1px)",
+          backgroundSize: "20px 20px",
         }}
       />
       <div className="max-w-[900px] mx-auto relative z-10">
@@ -26,7 +28,7 @@ export default function CodeShowcase() {
             Production-Ready in Minutes
           </h2>
           <p className="text-gray-500 text-sm md:text-base">
-            Integrate JAW with your existing Wagmi setup in just a few lines of code.
+            Integrate JAW in just a few lines of code.
           </p>
         </div>
 
@@ -51,72 +53,72 @@ export default function CodeShowcase() {
             <pre className="text-[10px] md:text-xs leading-4 md:leading-5 font-mono">
               <code>
                 <span className="text-[#cba6f7]">import</span>
-                <span className="text-[#cdd6f4]"> {'{ '}</span>
+                <span className="text-[#cdd6f4]"> {"{ "}</span>
                 <span className="text-[#f9e2af]">jaw</span>
-                <span className="text-[#cdd6f4]">{' }'} </span>
+                <span className="text-[#cdd6f4]">{" }"} </span>
                 <span className="text-[#cba6f7]">from</span>
                 <span className="text-[#a6e3a1]"> '@jaw-id/wagmi'</span>
-                {'\n'}
+                {"\n"}
                 <span className="text-[#cba6f7]">import</span>
-                <span className="text-[#cdd6f4]"> {'{ '}</span>
+                <span className="text-[#cdd6f4]"> {"{ "}</span>
                 <span className="text-[#f9e2af]">createConfig</span>
                 <span className="text-[#cdd6f4]">, </span>
                 <span className="text-[#f9e2af]">http</span>
-                <span className="text-[#cdd6f4]">{' }'} </span>
+                <span className="text-[#cdd6f4]">{" }"} </span>
                 <span className="text-[#cba6f7]">from</span>
                 <span className="text-[#a6e3a1]"> 'wagmi'</span>
-                {'\n'}
+                {"\n"}
                 <span className="text-[#cba6f7]">import</span>
-                <span className="text-[#cdd6f4]"> {'{ '}</span>
+                <span className="text-[#cdd6f4]"> {"{ "}</span>
                 <span className="text-[#f9e2af]">mainnet</span>
                 <span className="text-[#cdd6f4]">, </span>
                 <span className="text-[#f9e2af]">base</span>
-                <span className="text-[#cdd6f4]">{' }'} </span>
+                <span className="text-[#cdd6f4]">{" }"} </span>
                 <span className="text-[#cba6f7]">from</span>
                 <span className="text-[#a6e3a1]"> 'wagmi/chains'</span>
-                {'\n\n'}
+                {"\n\n"}
                 <span className="text-[#cba6f7]">const</span>
                 <span className="text-[#cdd6f4]"> config = </span>
                 <span className="text-[#89b4fa]">createConfig</span>
-                <span className="text-[#cdd6f4]">{'({'}</span>
-                {'\n'}
-                <span className="text-[#cdd6f4]">  chains: [</span>
+                <span className="text-[#cdd6f4]">{"({"}</span>
+                {"\n"}
+                <span className="text-[#cdd6f4]">{"  "}chains: [</span>
                 <span className="text-[#f9e2af]">mainnet</span>
                 <span className="text-[#cdd6f4]">, </span>
                 <span className="text-[#f9e2af]">base</span>
                 <span className="text-[#cdd6f4]">],</span>
-                {'\n'}
-                <span className="text-[#cdd6f4]">  connectors: [</span>
-                {'\n'}
-                <span className="text-[#cdd6f4]">    </span>
+                {"\n"}
+                <span className="text-[#cdd6f4]">{"  "}connectors: [</span>
+                {"\n"}
+                <span className="text-[#cdd6f4]">{"    "}</span>
                 <span className="text-[#89b4fa]">jaw</span>
-                <span className="text-[#cdd6f4]">{'({'}</span>
-                {'\n'}
-                <span className="text-[#cdd6f4]">      apiKey: </span>
+                <span className="text-[#cdd6f4]">{"({"}</span>
+                {"\n"}
+                <span className="text-[#cdd6f4]">{"      "}apiKey: </span>
                 <span className="text-[#a6e3a1]">'your-api-key'</span>
                 <span className="text-[#cdd6f4]">,</span>
-                {'\n'}
-                <span className="text-[#cdd6f4]">    {'})'}</span>
-                {'\n'}
-                <span className="text-[#cdd6f4]">  ],</span>
-                {'\n'}
-                <span className="text-[#cdd6f4]">  transports: {'{'}</span>
-                {'\n'}
-                <span className="text-[#cdd6f4]">    [</span>
+                {"\n"}
+                <span className="text-[#cdd6f4]">{"    "}{"})"}</span>
+                {"\n"}
+                <span className="text-[#cdd6f4]">{"  "}],</span>
+                {"\n"}
+                <span className="text-[#cdd6f4]">{"  "}transports: {"{"}</span>
+                {"\n"}
+                <span className="text-[#cdd6f4]">{"    "}[</span>
                 <span className="text-[#f9e2af]">mainnet</span>
                 <span className="text-[#cdd6f4]">.id]: </span>
                 <span className="text-[#89b4fa]">http</span>
                 <span className="text-[#cdd6f4]">(),</span>
-                {'\n'}
-                <span className="text-[#cdd6f4]">    [</span>
+                {"\n"}
+                <span className="text-[#cdd6f4]">{"    "}[</span>
                 <span className="text-[#f9e2af]">base</span>
                 <span className="text-[#cdd6f4]">.id]: </span>
                 <span className="text-[#89b4fa]">http</span>
                 <span className="text-[#cdd6f4]">(),</span>
-                {'\n'}
-                <span className="text-[#cdd6f4]">  {'}'}</span>
-                {'\n'}
-                <span className="text-[#cdd6f4]">{'})'}</span>
+                {"\n"}
+                <span className="text-[#cdd6f4]">{"  "}{"}"}</span>
+                {"\n"}
+                <span className="text-[#cdd6f4]">{"})"}</span>
               </code>
             </pre>
           </div>
@@ -124,8 +126,11 @@ export default function CodeShowcase() {
 
         {/* CTA Button */}
         <div className="text-center mt-6 md:mt-8">
-          <Button asChild className="bg-[#171717] text-white hover:bg-gray-800 px-5 md:px-6 py-2.5 md:py-3 h-auto">
-            <a href="#" className="inline-flex items-center gap-2">
+          <Button
+            asChild
+            className="bg-[#171717] text-white hover:bg-gray-800 px-5 md:px-6 py-2.5 md:py-3 h-auto"
+          >
+            <a href="https://docs.jaw.id" className="inline-flex items-center gap-2">
               View Full Documentation
               <ArrowRight className="w-4 h-4" />
             </a>
@@ -133,5 +138,5 @@ export default function CodeShowcase() {
         </div>
       </div>
     </section>
-  )
+  );
 }

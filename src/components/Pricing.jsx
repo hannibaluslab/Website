@@ -1,29 +1,31 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Check, Info } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Check } from "lucide-react";
 
 const plans = [
   {
-    title: 'For Developers',
+    title: "For Developers",
     features: [
-      'Full docs & SDK',
-      'Production-ready in minutes',
-      'Integrate using Wagmi or EIP-1193 provider',
-      'Low level API integrations',
+      "Full docs & SDK",
+      "Production-ready in minutes",
+      "Integrate using Wagmi or EIP-1193 provider",
+      "Low level API integrations",
     ],
-    buttonText: 'Get Started',
+    buttonText: "Get Started",
+    href: "https://dashboard.jaw.id",
   },
   {
-    title: 'For Business',
+    title: "For Businesses",
     features: [
-      'Talk to our team',
-      'Custom integration support',
-      'Early access to new features',
-      'Audit and compliance documentation',
+      "Talk to our team",
+      "Custom integration support",
+      "Early access to new features",
+      "Audit and compliance documentation",
     ],
-    buttonText: 'Contact Us',
+    buttonText: "Contact Us",
+    href: "#contact",
   },
-]
+];
 
 export default function Pricing() {
   return (
@@ -32,8 +34,18 @@ export default function Pricing() {
       <div className="absolute inset-0 opacity-10">
         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
           <defs>
-            <pattern id="waves" width="100" height="20" patternUnits="userSpaceOnUse">
-              <path d="M0 10 Q25 0 50 10 T100 10" fill="none" stroke="gray" strokeWidth="0.5" />
+            <pattern
+              id="waves"
+              width="100"
+              height="20"
+              patternUnits="userSpaceOnUse"
+            >
+              <path
+                d="M0 10 Q25 0 50 10 T100 10"
+                fill="none"
+                stroke="gray"
+                strokeWidth="0.5"
+              />
             </pattern>
           </defs>
           <rect width="100%" height="100%" fill="url(#waves)" />
@@ -54,23 +66,27 @@ export default function Pricing() {
               className="bg-white border-gray-200 rounded-xl md:rounded-2xl hover:shadow-lg transition-shadow py-0 gap-0"
             >
               <CardHeader className="p-6 md:p-8 pb-0">
-                <CardTitle className="text-xl md:text-2xl font-bold">{plan.title}</CardTitle>
+                <CardTitle className="text-xl md:text-2xl font-bold">
+                  {plan.title}
+                </CardTitle>
               </CardHeader>
-              <CardContent className="p-6 md:p-8 pt-4 md:pt-6">
+              <CardContent className="p-6 md:p-8 pt-2 md:pt-4">
                 <ul className="space-y-3 md:space-y-4 mb-6 md:mb-8">
                   {plan.features.map((feature, i) => (
-                    <li key={i} className="flex items-center justify-between gap-2">
-                      <div className="flex items-center gap-2 md:gap-3">
-                        <Check className="w-4 h-4 md:w-5 md:h-5 text-gray-800 flex-shrink-0" />
-                        <span className="text-gray-700 text-sm md:text-base">{feature}</span>
-                      </div>
-                      <Info className="w-4 h-4 text-gray-400 flex-shrink-0 hidden md:block" />
+                    <li key={i} className="flex items-center gap-2 md:gap-3">
+                      <Check className="w-4 h-4 md:w-5 md:h-5 text-gray-800 flex-shrink-0" />
+                      <span className="text-gray-700 text-sm md:text-base">
+                        {feature}
+                      </span>
                     </li>
                   ))}
                 </ul>
 
-                <Button className="w-full bg-black text-white hover:bg-gray-800 py-2.5 md:py-3 h-auto">
-                  {plan.buttonText}
+                <Button
+                  asChild
+                  className="w-full bg-black text-white hover:bg-gray-800 py-2.5 md:py-3 h-auto"
+                >
+                  <a href={plan.href}>{plan.buttonText}</a>
                 </Button>
               </CardContent>
             </Card>
@@ -78,5 +94,5 @@ export default function Pricing() {
         </div>
       </div>
     </section>
-  )
+  );
 }
