@@ -4,7 +4,7 @@ import { Menu } from "lucide-react";
 
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200">
+    <header className="fixed top-[40px] left-0 right-0 z-50 bg-white border-b border-gray-200">
       <div className="max-w-[1280px] mx-auto px-6 h-[68px] flex items-center justify-between">
         {/* Logo */}
         <a href="/" className="flex items-center">

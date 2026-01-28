@@ -14,6 +14,10 @@ import Footer from './components/Footer'
 function App() {
   return (
     <div className="min-h-screen bg-white">
+      {/* Announcement Banner */}
+      <div className="fixed top-0 left-0 right-0 z-50 bg-amber-100 text-amber-900 text-center py-2.5 px-4 text-sm font-medium">
+        SDKs rollout on the way. Final audit with Nethermind Security is happening now.
+      </div>
       <Header />
       <Hero />
       <Pillars />

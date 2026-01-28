@@ -3,7 +3,7 @@ import { ArrowRight, Check } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="mt-[68px] pt-12 md:pt-20 pb-20 md:pb-32 px-4 md:px-6 bg-white relative overflow-hidden min-h-[calc(100vh-68px+50px)]">
+    <section className="mt-[108px] pt-12 md:pt-20 pb-20 md:pb-32 px-4 md:px-6 bg-white relative overflow-hidden min-h-[calc(100vh-108px+50px)]">
       {/* Background Pattern */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <img
